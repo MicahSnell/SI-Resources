@@ -38,8 +38,8 @@ int main() {
 
   newNode = new ListNode;
   newNode->value = 2.4;
-  newNode->next = nullptr; // since line 27 changes newNode->next = head, this
-                           // assignment statement isnt necessary
+  newNode->next = nullptr; // since line 43 changes newNode->next = head, this
+                           // assignment statement is just good practice
   newNode->next = head;
   head = newNode;
 
