@@ -13,7 +13,7 @@
  *         do-while loop.
  *   3. -v Will display the loop number and the output from both 1. and 2.
  *         together.
- *   Ex. ./bubbleSortVerbose -v
+ *   Ex. ./a.out -v
  *
  * This will help demonstrate the way that bubble sort operates.
  */
