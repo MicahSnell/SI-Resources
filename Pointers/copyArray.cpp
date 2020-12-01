@@ -23,7 +23,7 @@ int *copyValues(int size, int data[]) {
   for (int i = 0; i < size; ++i)
     newArray[i] = data[i];
 
-  return newArray;
+  return newArray; // function returns an int pointer, don't dereference here!
 }
 
 int main() {
