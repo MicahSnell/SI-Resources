@@ -31,20 +31,25 @@ int main() {
 
   int *result; // a pointer that will point to the returned value from copyArray
 
-  cout << "Enter a value between 1 and 10: ";
+  cout << "Enter a value between 1 and 12: ";
   cin >> userInput;
 
-  while (userInput < 1 || userInput > 10) {
+  while (userInput < 1 || userInput > 12) {
     cout << "Invalid input, try again: ";
     cin >> userInput;
   }
 
   result = copyValues(userInput, data);
 
-  cout << "Result: ";
+  cout << endl
+       << "Original: " << endl;
+  for (int i = 0; i < 12; ++i) 
+    cout << *(data + i) << " ";
+  cout << endl << endl;
+  
+  cout << "Result: " << endl;
   for (int i = 0; i < userInput; ++i)
-    cout << *(result + i) << " ";
-
+    cout << result[i] << " ";
   cout << endl;
 
   delete [] result;
