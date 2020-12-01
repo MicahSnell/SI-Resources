@@ -10,7 +10,8 @@
  * of values stored in the 'data' array and returns it to the 'result' pointer
  * in main. Then the original values are printed to the screen using pointer 
  * arithmetic on the 'data' array. The 'result' array is printed to the screen
- * using array syntax. Lastly, the memory that was allocated is freed using 'delete.'
+ * using array syntax. Lastly, the memory that was allocated is freed using 
+ * 'delete.'
  */
 #include <iostream>
 
