@@ -6,10 +6,11 @@
  * Date: 10/01/20
  *
  * This program uses pointers to allocate dynamic memory, and returns an array
- * from a function. The function 'copyValues' copies the values stored in the
- * 'data' array and returns it to the result pointer in main. Then the values
- * are printed to the screen using pointer arithmetic. Lastly, the memory that
- * was allocated is freed using 'delete.'
+ * from a function. The function 'copyValues' copies a user specified number 
+ * of values stored in the 'data' array and returns it to the 'result' pointer
+ * in main. Then the original values are printed to the screen using pointer 
+ * arithmetic on the 'data' array. The 'result' array is printed to the screen
+ * using array syntax. Lastly, the memory that was allocated is freed using 'delete.'
  */
 #include <iostream>
 
