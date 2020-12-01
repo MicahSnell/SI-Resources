@@ -50,7 +50,7 @@ int main() {
   cout << "Result: " << endl;
   for (int i = 0; i < userInput; ++i)
     cout << result[i] << " ";
-  cout << endl;
+  cout << endl << endl;
 
   delete [] result;
   return 0;
