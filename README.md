@@ -4,7 +4,7 @@ This repository contains coding examples and demonstrations that I have created/
 1. Sign into the CS Linux server using your netID and password.
 2. Type the following into the command line and press enter
 ```bash
-git clone https://github.com/MicahSnell/SI-Resources.git
+git clone https://github.com/MicahSnell/SI-Resources
 ```
 Use the command
 ```bash
