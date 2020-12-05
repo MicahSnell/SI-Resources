@@ -6,6 +6,10 @@ This repository contains coding examples and demonstrations that I have created/
 ```bash
 git clone https://github.com/MicahSnell/SI-Resources
 ```
+Which will copy this entire repo into your current directory on the Linux server (or your home computer if you have git installed).
+
+## How to Use
+Each program can be compiled and run from the command line, and each program has a file called `README.md` which explains how to do this.  
 Use the command
 ```bash
 cd SI-Resources
