@@ -1,6 +1,6 @@
 # SI-Resources
 This repository contains coding examples and demonstrations that I have created/adapted for my Supplemental Instruction sessions! Take a look and feel free to use them for anything!
-## How to Clone
+## How to Clone this Repository
 1. Sign into the CS Linux server using your netID and password.
 2. Type the following into the command line and press enter
 ```bash
