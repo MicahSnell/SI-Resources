@@ -6,7 +6,6 @@ This repository contains coding examples and demonstrations that I have created/
 ```bash
 git clone https://github.com/MicahSnell/SI-Resources.git
 ```
-Now you can navigate into the folders, and build and run each of the programs!
 Use the command
 ```bash
 cd SI-Resources
@@ -16,4 +15,9 @@ Use the command
 ```
 ls
 ```
-to list the contents of the directory.
+to list the contents of the directory.  
+Now you can navigate into each of the directories, and build and run each of the programs!  
+To go back one directory, type
+```bash
+cd ..
+```
