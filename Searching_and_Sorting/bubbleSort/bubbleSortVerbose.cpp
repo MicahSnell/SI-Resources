@@ -36,13 +36,13 @@ void bubbleSort(int list[], int size) {
 
     swapped = false;
     for (int i = 0; i < size - 1; ++i) {
-      if (list[i] > list[i + 1] ) {
+      if (list[i] > list[i+1]) {
         if (swapOutput || verboseOutput) {
           cout << "Swaping index: " << i << " with index: " << i + 1 << endl;
           cout << "Swaping values: " << list[i] << " with value: "
-               << list[i + 1] << endl;
+               << list[i+1] << endl;
         }
-        swap(list[i], list[i + 1]);
+        swap(list[i], list[i+1]);
         swapped = true;
       }
     }
@@ -57,10 +57,10 @@ void bubbleSort(int list[], int size) {
       cout << "Sort complete!" << endl << endl;
     else
       ++count;
-  } while (swapped == true );
+  } while (swapped);
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char** argv) {
   if (argc > 1) {
     string flag = argv[1];
     if (flag.compare("-s") == 0)
@@ -76,7 +76,7 @@ int main(int argc, char *argv[]) {
          << "Optional parameters are -s, -a, and -v" << endl;
   }
 
-  int array[] = {6, 556, 343, 23, 1, 676, 88, 99, 9001, 122, 3},
+  int array[] = {126, 556, 343, 230, 142, 676, 887, 991, 9001, 122, 456},
       size = 11;
 
   cout << endl
