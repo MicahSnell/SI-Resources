@@ -31,7 +31,7 @@ void bubbleSort(int list[], int size) {
   do {
     if (swapOutput || arrayOutput || verboseOutput) {
       cout << endl
-           << "Pass #" << count << ":" << endl;
+           << "Pass #" << count << endl;
     }
 
     swapped = false;
@@ -48,16 +48,24 @@ void bubbleSort(int list[], int size) {
     }
 
     if (arrayOutput || verboseOutput) {
-      for (int i = 0; i < size; ++i)
+      for (int i = count - 1; i < size - 1; ++i)
+        cout << "    ";
+      for (int i = size - count; i < size; ++i)
         cout << list[i] << " ";
       cout << endl;
     }
 
-    if (!swapped && (swapOutput || arrayOutput || verboseOutput))
-      cout << "Sort complete!" << endl << endl;
-    else
-      ++count;
+    ++count;
   } while (swapped);
+
+  if (verboseOutput || swapOutput || arrayOutput) {
+    cout << endl
+         << "Sort complete!" << endl;
+
+    for (int i = 0; i < size; ++i)
+      cout << list[i] << " ";
+    cout << endl;
+  }
 }
 
 int main(int argc, char** argv) {
@@ -87,7 +95,8 @@ int main(int argc, char** argv) {
 
   bubbleSort(array, size);
 
-  cout << "Array after bubbleSort: ";
+  cout << endl
+       << "Array after bubbleSort: ";
   for (int i = 0; i < size; ++i)
     cout << array[i] << " ";
   cout << endl << endl;
