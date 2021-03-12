@@ -61,9 +61,6 @@ void bubbleSort(int list[], int size) {
 }
 
 int main(int argc, char *argv[]) {
-  int array[] = {6, 556, 343, 23, 1, 676, 88, 99, 9001, 122, 3},
-      size = 11;
-
   if (argc > 1) {
     string flag = argv[1];
     if (flag.compare("-s") == 0)
@@ -73,6 +70,14 @@ int main(int argc, char *argv[]) {
     else if (flag.compare("-v") == 0)
       verboseOutput = true;
   }
+  if (argc == 1) {
+    cout << "This program can be run with extra output." << endl
+         << "Ex: ./a.out -v" << endl
+         << "Optional parameters are -s, -a, and -v" << endl;
+  }
+
+  int array[] = {6, 556, 343, 23, 1, 676, 88, 99, 9001, 122, 3},
+      size = 11;
 
   cout << endl
        << "Array before bubbleSort: ";
