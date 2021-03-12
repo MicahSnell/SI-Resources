@@ -10,7 +10,7 @@
  * values from the 'data' array into the result array. All the even values are
  * copied but as odd numbers instead of even. User input is given from the
  * command line. Such as:
- *   ./a.out [size of data array] [max value]
+ *   ./a.out [size of data array] [max value] [RNG seed]
  * The 'data' array is filled with random values from 1 to max value.
  */
 #include <iostream>
@@ -38,8 +38,8 @@ int* copyOddsOnly(int data[], int size) {
 }
 
 int main(int argc, char** argv) {
-  if (argc != 3) {
-    cout << "USAGE: ./a.out [size of array] [max value]\n\n";
+  if (argc != 4) {
+    cout << "USAGE: ./a.out [size of array] [max value] [RNG seed]\n\n";
     return -1;
   }
 
