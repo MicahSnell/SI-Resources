@@ -24,4 +24,4 @@ and the program will output the loop number and the entire array after each pass
 ```bash
 ./a.out -v
 ```
-and the program will output the loop number and the output from both 1. and 2. together.
+and the program will output the loop number and the output from both 1 and 2 together.
