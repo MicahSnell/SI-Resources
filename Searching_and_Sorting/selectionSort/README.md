@@ -12,11 +12,13 @@ Now you can run the program in three different output modes by using different c
 ./a.out -s
 ```
 and the program will output the loop number and every value/index that is swapped in each pass.  
+  
 2. Type
 ```bash
 ./a.out -a
 ```
 and the program will output the loop number and the sorted elements in the array after each pass.  
+  
 3. Type
 ```bash
 ./a.out -v
