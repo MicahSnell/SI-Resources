@@ -11,8 +11,8 @@
 
  // Default constructor
 Student::Student() {
-  name = "First Last";
-  year = "Freshman";
+  name = "n/a";
+  year = "n/a";
 }
 
 // Non-default constructor
